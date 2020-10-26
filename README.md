@@ -30,5 +30,6 @@ alias jupyter-notebook-remote='ssh -N -f -L localhost:8890:localhost:8889 user@r
 
 #### Looping through folders in the current directory
 ```sh
+array=(*/)
 for dir in "${array[@]}"; do cd $dir && pwd && cd ..; done
 ```
