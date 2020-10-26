@@ -1,5 +1,5 @@
 # awesome-terminal
-A list of terminal commands and tweaks that I frequently use.
+A list of terminal and bash commands and tweaks that I frequently use.
 
 #### Find and delete all file with certain names
 ```sh
@@ -26,4 +26,9 @@ jupyter notebook --no-browser --port=8887
 Add the following line inside `~/.bash_aliases`
 ```sh
 alias jupyter-notebook-remote='ssh -N -f -L localhost:8890:localhost:8889 user@remote_address'
+```
+
+#### Looping through folders in the current directory
+```sh
+for dir in "${array[@]}"; do cd $dir && pwd && cd ..; done
 ```
